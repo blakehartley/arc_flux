@@ -1,0 +1,9 @@
+/galileo13/emilp/			# Location of nanoJubilee/Reduced/ Directory
+0						# Model (0 for continuous, 1 for Bursty)
+0						# Step Type (1 for dnHdt, 2 for dIdt, 0 for constant)
+0.100					# Time step (for step type 0)
+10.1001						# Number of Myr to run the sim
+0						# Output file number to start on
+0.10000					# Myr between outputs
+1.00					# Escape fraction
+5.e7					# Minimum bursty halo mass
