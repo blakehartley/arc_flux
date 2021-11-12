@@ -254,7 +254,7 @@ __global__ void timestep(	float* rate, float* dt, float* density, float* x_N,
 	__syncthreads();
 }
 
-__global__ void ionization(	float dt, float* error, float* density, float* x_N,
+__global__ void ionization1(	float dt, float* error, float* density, float* x_N,
 							float* FluxArray, float* EArray, float* dEArray,
 							float* background, int dim, float a)
 {
@@ -380,7 +380,7 @@ __global__ void ionization(	float dt, float* error, float* density, float* x_N,
 //#include "./inc/rkck.cu"
 //#include "./inc/simpr.cu"
 
-__global__ void ionization2(	float dt, float* error, float* density, float* x_N,
+__global__ void ionization(	float dt, float* error, float* density, float* x_N,
 							float* FluxArray, float* EArray, float* dEArray,
 							float* background, int dim, float a)
 {
